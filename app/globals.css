@@ -1,0 +1,17 @@
+:root { color-scheme: dark; }
+body {
+  margin: 0; padding: 32px;
+  background: #0b1120; color: #e2e8f0;
+  font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+h1 { font-size: 18px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 20px; }
+.counts { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 24px; }
+.count { background: #131c2e; border: 1px solid #1f2a40; padding: 8px 12px; border-radius: 6px; }
+.count b { display: block; font-size: 18px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 28px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #1a2437; font-size: 12px; }
+th { color: #64748b; text-transform: uppercase; letter-spacing: .06em; }
+.live, .live_funded { color: #22c55e; font-weight: 700; }
+.not_found, .format_invalid { color: #475569; }
+.already_redeemed { color: #f59e0b; }
+.error { color: #ef4444; }
