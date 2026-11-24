@@ -1,0 +1,30 @@
+{
+  "name": "giftcheck",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "worker": "tsx worker/run.ts",
+    "seed": "tsx scripts/seed.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "db:push": "psql \"$DATABASE_URL\" -f db/schema.sql"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "p-queue": "^8.0.1",
+    "pg": "^8.13.0",
+    "playwright": "^1.49.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
