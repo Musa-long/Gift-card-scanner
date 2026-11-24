@@ -1,5 +1,5 @@
-import { checkChar } from "./checksum/luhn-mod-n.js";
-import { getFormat, type Format } from "./checksum/formats.js";
+import { checkChar } from "./checksum/luhn-mod-n.ts";
+import { getFormat, type Format } from "./checksum/formats.ts";
 
 const toBig = (s: string, alphabet: string): bigint => {
   const base = BigInt(alphabet.length);
